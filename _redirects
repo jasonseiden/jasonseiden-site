@@ -1,16 +1,1 @@
-# Cloudflare Pages _redirects
-# Format: /old-path  /new-path  status-code
 
-# Handle trailing slashes gracefully (Cloudflare Pages handles most automatically)
-/home                   /                       301
-/index.html             /                       301
-/the-work/              /the-work               301
-/no-more-dandelions/    /no-more-dandelions     301
-/verdict-aeo/           /verdict-aeo            301
-/speaking/              /speaking               301
-/about-jason-seiden/    /about-jason-seiden     301
-
-# Privacy policy placeholder (add a real page or redirect to an external doc)
-/privacy-policy         /privacy-policy         200
-
-# Catch-all 404
