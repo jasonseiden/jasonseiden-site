@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdict AEO — AI Search Optimization for Attorneys | Jason Seiden</title>
+  <meta name="description" content="AI will now decide if your law firm's marketing pays off—or gets buried. VerdictAEO audits help law firms protect referrals and capture new ones in the AI search era.">
+  <link rel="canonical" href="https://jasonseiden.com/verdict-aeo">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    .verdict-lede {
+      background: var(--black);
+      color: var(--white);
+      padding: calc(var(--nav-h) + 60px) 40px 60px;
+      text-align: center;
+    }
+    .verdict-lede h1 {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(18px, 3vw, 26px);
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 0.02em;
+      max-width: 640px;
+      margin: 0 auto 8px;
+      line-height: 1.5;
+    }
+    .verdict-lede h2 {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(42px, 8vw, 80px);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      line-height: 1;
+      margin: 24px auto 0;
+    }
+    .verdict-lede .verdict-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(14px, 1.8vw, 18px);
+      color: rgba(255,255,255,0.55);
+      max-width: 680px;
+      margin: 24px auto 40px;
+      line-height: 1.7;
+    }
+    .verdict-lede a.cta-btn {
+      background: var(--white);
+      color: var(--black);
+    }
+    .verdict-lede a.cta-btn:hover { background: #e0e0e0; }
+    .ai-query {
+      font-style: italic;
+      color: rgba(255,255,255,0.6);
+      font-size: clamp(15px, 1.6vw, 17px);
+      margin: 6px 0;
+    }
+    .stat-highlight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .stat-highlight .big-num {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(48px, 7vw, 80px);
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1;
+    }
+    .stat-highlight .big-label {
+      font-size: clamp(14px, 1.5vw, 16px);
+      color: var(--body-text);
+      margin-top: 12px;
+      max-width: 280px;
+    }
+    .stats-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      margin: 40px 0;
+    }
+    .stats-2col .stat-highlight:first-child {
+      border-right: 1px solid rgba(0,0,0,0.08);
+    }
+    @media (max-width: 480px) {
+      .stats-2col { grid-template-columns: 1fr; }
+      .stats-2col .stat-highlight:first-child { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.08); }
+      .verdict-lede { padding: calc(var(--nav-h) + 40px) 24px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" style="background: rgba(0,0,0,0.85);">
+  <button class="nav-hamburger" id="menuBtn" aria-label="Open navigation" style="filter:invert(1);">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="/" class="nav-wordmark" style="color: var(--white);">Truth + Empathy</a>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-drawer" id="navDrawer">
+  <button class="nav-drawer-close" id="menuClose" aria-label="Close">✕</button>
+  <a href="/">Home</a>
+  <a href="/the-work">The Work</a>
+  <a href="/no-more-dandelions">The Playbook</a>
+  <a href="/verdict-aeo">Verdict AEO</a>
+  <a href="/speaking">Speaking</a>
+  <a href="/about-jason-seiden">About Jason</a>
+</div>
+
+<!-- DARK LEDE -->
+<div class="verdict-lede">
+  <h1>You're a law firm.<br>You invested in SEO &amp; LinkedIn.</h1>
+  <h2>Verdict AEO</h2>
+  <p class="verdict-sub">AI will now decide if that work pays off—or gets buried.</p>
+
+  <p style="color:rgba(255,255,255,0.55); font-size:15px; margin-bottom:8px;">Searches may start with a referral, LinkedIn connection, or Google search… but increasingly, they end with an AI query.</p>
+  <p class="ai-query">"Who's the best at civil litigation in Denver?"</p>
+  <p class="ai-query">"I was referred to Finch, Woods, &amp; Gambini for criminal defense representation. Are they good?"</p>
+  <p class="ai-query">"Is there a lawyer in Miami who specializes in forfeitures for non-citizens?"</p>
+  <p style="color:rgba(255,255,255,0.55); font-size:15px; margin: 20px 0 32px; max-width:640px; margin-left:auto; margin-right:auto;">AI won't say who's "best," but it will provide a recommended short list based on queries like these—including when asked about a specific referral someone's already received.</p>
+
+  <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-btn">Book a Discovery Call →</a>
+</div>
+
+<!-- WHY THIS EXISTS -->
+<div class="section">
+  <h2 class="section-title">Why This Exists</h2>
+  <p>I run marketing teams. My father's an attorney. We compared notes.</p>
+  <p>When my dad asked me to look at what his marketing agency was delivering for SEO, what I found was a basic Excel spreadsheet with monthly total clicks and a separate keyword list. Nothing that connected to a single case or answered the most important question: what business came from this?</p>
+  <p>The agency added "AI search" to its service menu in 2024 but their "free" audit was just a slightly dressed up SEO audit.</p>
+  <p>We're building Verdict to do attorney AEO correctly.</p>
+  <p>The only service Verdict offers right now is an AEO audit. No upsells, no retainer bloat. Just a clear picture of what it will take to get your firm surfaced in AI search results. You can take our report and hand it to your marketing agency or team. It's the blueprint for what they should do next—and how to measure it.</p>
+  <a href="/about-jason-seiden" class="cta-link">More about Jason →</a>
+
+  <div class="stats-2col" style="margin-top:48px;">
+    <div class="stat-highlight">
+      <span class="big-num">78%</span>
+      <span class="big-label">of legal queries now trigger a Google AI Overview above all the blue links <em style="font-size:12px;">(seranking.com)</em></span>
+    </div>
+    <div class="stat-highlight">
+      <span class="big-num">1 in 4</span>
+      <span class="big-label">legal consumers already uses AI to research attorneys before contacting one <em style="font-size:12px;">(americanbar.com)</em></span>
+    </div>
+  </div>
+
+  <p>AI is coming for referrals faster than for actual legal work. Forty-two percent of people consult AI on legal matters before talking with an attorney. In the realm of marketing, people already trust AI recommendations over those from family and friends by nearly a 2:1 margin for consumer purchases. With about 60% of people researching legal referrals online, this is a trend worth watching.</p>
+  <p>AEO (Answer Engine Optimization) is the practice of structuring your online presence so AI systems cite your firm when answering questions about law firms in your market. The attorneys who take control of their AI presence in the next 12 months will be hard to displace. The ones who wait will be playing catch-up against competitors who have created a self-reinforcing marketing wall.</p>
+</div>
+
+<!-- WHAT WE DO -->
+<div class="section-bg">
+  <div class="section">
+    <h2 class="section-title">What We Do</h2>
+    <p>We create AEO audits you can give to your existing partners. No upsell.</p>
+    <p>A VerdictAEO audit becomes the statement of work or accountability document for your agency or marketing team. Use it to add AI-related initiatives to your marketing mix with confidence. Then, use it to help your content-creating attorneys hone their online presence and get better leverage from their LinkedIn posts, articles, and PR placements.</p>
+    <p>It is not a loss-leader or marketing tool. It's the one audit you need, focused on what moves the needle in 2026. Scope scales with your firm's size and complexity.</p>
+    <div style="margin-top:32px; text-align:center;">
+      <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-btn">Book a Discovery Call →</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="section">
+  <h2 class="section-title">Pricing</h2>
+
+  <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Price</th>
+          <th>Includes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Base audit</strong></td>
+          <td><strong>$15,000</strong></td>
+          <td>3 practice areas · 1 market · up to 10 attorneys</td>
+        </tr>
+        <tr>
+          <td>Additional market</td>
+          <td>$5,000 each</td>
+          <td>Each city or metro region, defined at engagement</td>
+        </tr>
+        <tr>
+          <td>Additional practice areas</td>
+          <td>$1,500 / 3 areas</td>
+          <td>Per market—billed separately per market</td>
+        </tr>
+        <tr>
+          <td>Additional attorneys</td>
+          <td>$5,000 / 10</td>
+          <td>Each attorney's bio, schema, entity authority, and citation presence reviewed individually</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pricing-example">
+    <h3>Example — 2 Cities · 6 Practice Areas · 30 Attorneys</h3>
+    <div class="price-row"><span>Base — 1 city, 3 practice areas, 10 attorneys</span><span>$15,000</span></div>
+    <div class="price-row"><span>Second city</span><span>$5,000</span></div>
+    <div class="price-row"><span>Add'l 3 practice areas, city 1</span><span>$1,500</span></div>
+    <div class="price-row"><span>Add'l 3 practice areas, city 2</span><span>$1,500</span></div>
+    <div class="price-row"><span>Attorneys 11–20</span><span>$5,000</span></div>
+    <div class="price-row"><span>Attorneys 21–30</span><span>$5,000</span></div>
+    <div class="price-row" style="font-weight:700;"><span>Total</span><span>$33,000</span></div>
+  </div>
+
+  <p style="font-size:15px; color: rgba(40,33,30,0.65);">Not sure where your firm falls? Email jason @ jasonseiden . com with your number of attorneys, markets, and practice areas for an estimate.</p>
+</div>
+
+<!-- WHAT THE AUDIT COVERS -->
+<div class="section-bg">
+  <div class="section">
+    <h2 class="section-title">What the Audit Covers</h2>
+    <ul class="result-list">
+      <li><strong>AI visibility snapshot:</strong> are you cited in ChatGPT, Perplexity, Gemini, and Google AI Overviews for your primary practice areas and markets—and if not, who is?</li>
+      <li><strong>Competitive gap:</strong> what the firms showing up instead of you are doing differently, and why AI platforms are citing them.</li>
+      <li><strong>Google Business Profile health:</strong> completeness, review velocity, citation consistency across legal directories.</li>
+      <li><strong>On-site AEO readiness:</strong> schema markup, FAQ structure, content question-coverage, E-E-A-T signals on attorney bio pages.</li>
+      <li><strong>Priority fix list:</strong> ranked by impact, with anticipated timing for when to expect results.</li>
+    </ul>
+    <div style="margin-top:32px; text-align:center;">
+      <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-btn">Book a Discovery Call →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq">
+
+    <div class="faq-item">
+      <button class="faq-question">What is an AEO audit and why does it matter now?</button>
+      <div class="faq-answer"><p>AEO stands for Answer Engine Optimization. It's the practice of structuring your website, content, and online presence so that AI systems (ChatGPT, Perplexity, Google AI Overview, and Gemini) cite your firm when someone asks for a recommendation. The way people find attorneys changed. Potential clients no longer just scroll ten blue links and pick one. They ask AI systems who to call—and the attorneys who get cited in those answers get the calls.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What can I do with the audit once I have it?</button>
+      <div class="faq-answer"><p>Three things. First, you'll know exactly where you stand—not just a health score, but a clear answer to whether you're being cited in AI search for your practice areas and core markets. Second, you'll have a prioritized, actionable fix list. This is literally the statement of work and accountability document for your agency or marketing team. Third, you'll have a shared reference point for any optimization work going forward.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Why isn't the Verdict AEO audit free?</button>
+      <div class="faq-answer"><p>Because free audits aren't real audits. They're sales tools—automated crawls dressed up as analysis, designed to surface enough problems to justify a pitch. The Verdict audit is a professional diagnostic. We run actual queries in ChatGPT, Perplexity, Gemini, and Google AI Overview for your specific practice areas and cities, map your content against the questions potential clients are asking AI systems, and compare you to specific competitors who are showing up instead of you. This work takes hours and expertise. Against the value of a single signed case, it's a rounding error.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How is this different from a SEMrush audit or what my current agency provides?</button>
+      <div class="faq-answer"><p>SEMrush is a tool—and a good one. We use it ourselves. What it produces is a technical readiness score: it can tell you whether AI crawlers can access your site, whether your schema is valid, whether your pages load quickly. What it can't tell you is why (or why not) one of your attorneys is being recommended when someone asks ChatGPT who to call. As for your current agency: ask them how many cases came from your marketing last year. If they can answer that with a number you can verify, they're doing good work.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How much will it cost to fix what the audit finds?</button>
+      <div class="faq-answer"><p>It depends on what we find and what you decide to do about it. The audit tells you what's driving the gap. It doesn't obligate you to fix anything. Some findings are quick—a missing schema block, a GBP category set to the wrong value. Those your current web team can often fix in an afternoon at no additional cost. Structural gaps require ongoing content and technical work. If the audit shows your situation is solid, we'll tell you that.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Will I actually get more cases from doing this?</button>
+      <div class="faq-answer"><p>Honestly: if your AEO foundation is currently weak and you fix it consistently over ~12 months, yes. Organic leads from well-executed AEO convert to signed retainers at consistently higher rates than traditional search. People who find you through AI answers have already pre-qualified themselves and have received an actual AI recommendation along with your firm's name. Industry data puts law firm SEO ROI at 526% over three years when executed with discipline—and AEO compounds on top of that. What we won't do is promise you a specific number of cases. Anyone who does is guessing.</p></div>
+    </div>
+
+  </div>
+</div>
+
+<div style="text-align:center; padding: 0 40px 80px;">
+  <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-btn">Book a Discovery Call →</a>
+  <p style="font-size:13px; color:rgba(40,33,30,0.5); margin-top:20px;">Verdict AEO is an offering of Jason Seiden.</p>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>&copy; <span id="yr"></span> Jason Seiden &nbsp;·&nbsp; <a href="/privacy-policy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const btn = document.getElementById('menuBtn');
+  const close = document.getElementById('menuClose');
+  const drawer = document.getElementById('navDrawer');
+  const overlay = document.getElementById('navOverlay');
+  function openMenu() { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMenu() { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow=''; }
+  btn.addEventListener('click', openMenu);
+  close.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  // Fix nav colors after scroll on this dark-top page
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.site-nav');
+    const hamburger = document.getElementById('menuBtn');
+    const wordmark = nav.querySelector('.nav-wordmark');
+    if (window.scrollY > 200) {
+      nav.style.background = 'rgba(255,255,255,0.97)';
+      hamburger.style.filter = '';
+      wordmark.style.color = '';
+    } else {
+      nav.style.background = 'rgba(0,0,0,0.85)';
+      hamburger.style.filter = 'invert(1)';
+      wordmark.style.color = 'var(--white)';
+    }
+  });
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const ans = q.nextElementSibling;
+      const isOpen = q.classList.contains('open');
+      document.querySelectorAll('.faq-question').forEach(x => { x.classList.remove('open'); x.nextElementSibling.classList.remove('open'); });
+      if (!isOpen) { q.classList.add('open'); ans.classList.add('open'); }
+    });
+  });
+</script>
+</body>
+</html>

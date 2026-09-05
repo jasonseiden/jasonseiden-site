@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Jason Seiden</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<nav class="site-nav">
+  <button class="nav-hamburger" id="menuBtn" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  <a href="/" class="nav-wordmark">Truth + Empathy</a>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-drawer" id="navDrawer">
+  <button class="nav-drawer-close" id="menuClose" aria-label="Close">✕</button>
+  <a href="/">Home</a>
+  <a href="/the-work">The Work</a>
+  <a href="/no-more-dandelions">The Playbook</a>
+  <a href="/verdict-aeo">Verdict AEO</a>
+  <a href="/speaking">Speaking</a>
+  <a href="/about-jason-seiden">About Jason</a>
+</div>
+<div class="section" style="min-height:60vh; display:flex; flex-direction:column; justify-content:center; text-align:center; padding-top:120px;">
+  <h1 style="font-family:'Jost',sans-serif; font-size:clamp(60px,10vw,120px); font-weight:700; color:#000; line-height:1; margin-bottom:16px;">404</h1>
+  <p style="font-size:20px;">This page doesn't exist.</p>
+  <a href="/" class="cta-btn" style="display:inline-block; margin:32px auto 0;">Back to Home →</a>
+</div>
+<footer class="site-footer"><p>&copy; <span id="yr"></span> Jason Seiden</p></footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const btn=document.getElementById('menuBtn'),close=document.getElementById('menuClose'),drawer=document.getElementById('navDrawer'),overlay=document.getElementById('navOverlay');
+  function openMenu(){drawer.classList.add('open');overlay.classList.add('open');document.body.style.overflow='hidden';}
+  function closeMenu(){drawer.classList.remove('open');overlay.classList.remove('open');document.body.style.overflow='';}
+  btn.addEventListener('click',openMenu);close.addEventListener('click',closeMenu);overlay.addEventListener('click',closeMenu);
+</script>
+</body>
+</html>
