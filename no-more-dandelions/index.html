@@ -49,7 +49,10 @@
   <div class="download-form">
     <h2>Download Your Copy</h2>
     <p>Free. No catch.</p>
-    <form id="downloadForm" action="#" method="post">
+    <form id="downloadForm" action="https://api.web3forms.com/submit"
+ method="post">
+      <input type="hidden" name="access_key" value="5b20d819-5d2d-498d-8059-323b92da07c3">
+<input type="hidden" name="subject" value="Playbook download — No More Dandelions">
       <div class="form-group">
         <label for="firstName">First Name <span style="color:#c0392b">*</span></label>
         <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
@@ -88,10 +91,21 @@
 
   // Form — wire up to your preferred email service (ConvertKit, Mailchimp, etc.)
   document.getElementById('downloadForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // TODO: replace with actual form submission endpoint
-    alert('Thank you! Check your inbox for the download link.');
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST', body: new FormData(this)
+  })
+  .then(r => r.json())
+  .then(data => {
+    if (data.success) {
+      this.innerHTML = '<p style="text-align:center;padding:24px 0;font-size:17px;">Done — check your inbox. The playbook is on its way.</p>';
+    } else { btn.textContent = 'Try again'; btn.disabled = false; }
   });
+});
+
 </script>
 </body>
 </html>
