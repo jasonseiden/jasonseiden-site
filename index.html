@@ -1,147 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Seiden | Fractional GTM Executive</title>
-  <meta name="description" content="Jason Seiden gets GTM teams unstuck. 30 years of pattern recognition across digital media, recruiting, professional services, logistics, and more. Fractional CMO, AEO, and speaker.">
-  <link rel="canonical" href="https://jasonseiden.com/">
-  <link rel="stylesheet" href="/css/main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jason Seiden — Operator &amp; Philosopher</title>
+<meta name="description" content="Jason Seiden helps organizations navigate inflection points. CRO at OnKey, CCO at INGENEV, author of the No More Dandelions GTM playbook, and writer of Turns out… on Substack.">
+<link rel="canonical" href="https://jasonseiden.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jason Seiden — Operator &amp; Philosopher">
+<meta property="og:description" content="I help organizations navigate inflection points — the moments when what got you here won't get you where you're going.">
+<meta property="og:url" content="https://jasonseiden.com/">
+<meta property="og:image" content="https://jasonseiden.com/img/jason.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modernist.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #f3f2f2; color: #201e1d; font-family: var(--font-body); }
+  a { color: #ae1800; }
+  a:hover { color: #201e1d; }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 72px 28px 0; }
+  .navlink { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: #201e1d; }
+  .navlink:hover { color: #ec3013; }
+  .work-row { border-top: 2px solid #201e1d; padding: 28px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 24px 32px; }
+  .work-row:hover { background: #eae9e9; }
+  .work-row:last-child { border-bottom: 2px solid #201e1d; }
+  .work-kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: #ec3013; margin: 0 0 10px; }
+  .work-title { font-size: clamp(24px, 2.8vw, 34px); letter-spacing: -0.025em; margin: 0 0 6px; }
+  .work-meta { font-size: 14px; color: #605d5d; margin: 0; }
+  .work-body { font-size: 17px; line-height: 1.5; margin: 0 0 16px; max-width: 46ch; }
+  .biglink { border-top: 2px solid #201e1d; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; text-decoration: none; color: #201e1d; font-family: var(--font-heading); font-weight: 800; font-size: 16px; }
+  .biglink:hover { color: #ec3013; }
+  .biglink:last-child { border-bottom: 2px solid #201e1d; }
+  .factrow { border-top: 2px solid #201e1d; padding: 10px 0; display: flex; justify-content: space-between; gap: 16px; }
+  .factrow:last-child { border-bottom: 2px solid #201e1d; }
+  .factrow dt { color: #605d5d; }
+  .factrow dd { margin: 0; font-weight: 600; text-align: right; }
+  .sub-btn { background: #201e1d; color: #f3f2f2; padding: 12px 20px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .sub-btn:hover { background: #4d170e; }
+  .sect-h2 { font-size: clamp(30px, 4vw, 46px); letter-spacing: -0.03em; margin: 0; }
+  .figband { border-top: 2px solid #201e1d; border-bottom: 2px solid #201e1d; margin: 0; }
+</style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="site-nav">
-  <button class="nav-hamburger" id="menuBtn" aria-label="Open navigation">
-    <span></span><span></span><span></span>
-  </button>
-  <a href="/" class="nav-wordmark">Truth + Empathy</a>
-</nav>
+<header style="position: sticky; top: 0; z-index: 20; background: #f3f2f2; border-bottom: 2px solid #201e1d">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: baseline; gap: 32px; flex-wrap: wrap">
+    <a href="#top" style="font-family: var(--font-heading); font-weight: 800; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; color: #201e1d">Jason Seiden</a>
+    <nav style="display: flex; gap: 24px; flex-wrap: wrap; margin-left: auto; align-items: baseline">
+      <a href="#work" class="navlink">Work</a>
+      <a href="#writing" class="navlink">Writing</a>
+      <a href="#about" class="navlink">About</a>
+      <a href="#contact" class="navlink">Contact</a>
+      <a href="https://seiden.substack.com" target="_blank" rel="noopener" class="btn btn-primary" style="text-transform: uppercase; letter-spacing: 0.06em; padding: 8px 16px">Subscribe</a>
+    </nav>
+  </div>
+</header>
 
-<!-- DRAWER -->
-<div class="nav-overlay" id="navOverlay"></div>
-<div class="nav-drawer" id="navDrawer">
-  <button class="nav-drawer-close" id="menuClose" aria-label="Close navigation">✕</button>
-  <a href="/">Home</a>
-  <a href="/the-work">The Work</a>
-  <a href="/no-more-dandelions">The Playbook</a>
-  <a href="/verdict-aeo">Verdict AEO</a>
-  <a href="/speaking">Speaking</a>
-  <a href="/about-jason-seiden">About Jason</a>
-</div>
-
-<!-- HERO -->
-<section class="hero">
-  <h1 class="hero-name">Jason Seiden</h1>
-  <div class="marquee-track">
-    <div class="marquee-inner">
-      <span>• GTM Transformation&nbsp;&nbsp;• 30 Years&nbsp;&nbsp;• I Get Teams Unstuck&nbsp;&nbsp;• GTM Transformation&nbsp;&nbsp;• 30 Years&nbsp;&nbsp;• I Get Teams Unstuck&nbsp;&nbsp;</span>
-      <span>• GTM Transformation&nbsp;&nbsp;• 30 Years&nbsp;&nbsp;• I Get Teams Unstuck&nbsp;&nbsp;• GTM Transformation&nbsp;&nbsp;• 30 Years&nbsp;&nbsp;• I Get Teams Unstuck&nbsp;&nbsp;</span>
+<section id="top" class="wrap">
+  <p style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #605d5d; margin: 0 0 28px">My mission: a world more connected, productive, and joyful</p>
+  <h1 style="font-size: clamp(44px, 7.4vw, 96px); line-height: 0.98; letter-spacing: -0.035em; margin: 0 0 32px; max-width: 15ch; text-wrap: balance">Operator &amp; Philosopher.</h1>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; padding-bottom: 44px">
+    <p style="font-size: clamp(19px, 2.1vw, 24px); line-height: 1.4; margin: 0; max-width: 34ch">I help organizations navigate inflection points — the moments when what got you here won't get you where you're going.</p>
+    <p style="font-size: 16px; line-height: 1.6; margin: 0; color: #444141; max-width: 40ch">30 years being on the edge of "what's next": RollingStone.com, LinkedIn's first certified consulting partner in North America, leadership &amp; communications consulting, a company built and sold. I tell the truth about what's broken, treat people like people, and ship the fix.</p>
+  </div>
+  <div style="border-top: 2px solid #201e1d; overflow: hidden; white-space: nowrap; padding: 12px 0">
+    <div style="display: inline-block; animation: drift 34s linear infinite; font-family: var(--font-heading); font-weight: 800; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase">
+      <span>Connected&nbsp;&nbsp;·&nbsp;&nbsp;Productive&nbsp;&nbsp;·&nbsp;&nbsp;Joyful&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color: #ec3013">Truth + Empathy</span>&nbsp;&nbsp;·&nbsp;&nbsp;Connected&nbsp;&nbsp;·&nbsp;&nbsp;Productive&nbsp;&nbsp;·&nbsp;&nbsp;Joyful&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color: #ec3013">Truth + Empathy</span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span>Connected&nbsp;&nbsp;·&nbsp;&nbsp;Productive&nbsp;&nbsp;·&nbsp;&nbsp;Joyful&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color: #ec3013">Truth + Empathy</span>&nbsp;&nbsp;·&nbsp;&nbsp;Connected&nbsp;&nbsp;·&nbsp;&nbsp;Productive&nbsp;&nbsp;·&nbsp;&nbsp;Joyful&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color: #ec3013">Truth + Empathy</span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
     </div>
   </div>
 </section>
 
-<!-- INTRO -->
-<div class="section">
-  <h2 class="section-title">Something Isn't Working,<br>You're Just Not Sure What.</h2>
-  <p>Metrics issue? People not executing? Wrong (or missing) tech?</p>
-  <p>This is the pain point I've diagnosed and addressed across multiple industries, from digital media to recruiting, professional services to logistics, energy infrastructure to WorkTech. I know where well-intended metrics mask root cause problems, and where popular tech pulls GTM teams away from the idiosyncratic tactics that helped them stand out in the first place.</p>
-  <p><strong>I get GTM teams unstuck. I find what's broken, address it, and leave behind working systems and a team that can operate them without me.</strong></p>
-  <p>My methodology is documented, repeatable, and available. What I bring to my clients is thirty years of pattern recognition, and a structured approach for righting things when the old playbook starts to fail—including when the team is moving into a new market, or adopting a new technology, and has no defined best practice to lean on.</p>
-  <p>If your GTM motion isn't converting the way it should, I can almost guarantee the core issue is neither tools nor people, but something more systemic. Let's diagnose the situation, name it, and get it addressed.</p>
-  <div style="margin-top:32px;">
-    <a href="/no-more-dandelions/" class="cta-btn">Download the Plan →</a>
-    <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-btn-outline">Schedule a Conversation</a>
+<figure class="grayscale figband">
+  <img src="img/alley.jpeg" alt="Mural-lined alley reflected in standing water" style="width: 100%; height: clamp(220px, 34vw, 420px); object-fit: cover; object-position: center 60%">
+</figure>
+
+<section id="work" class="wrap">
+  <div style="display: flex; gap: 24px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px">
+    <h2 class="sect-h2">The work</h2>
+    <p style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #605d5d; margin: 0">Full time, fractional, &amp; advisory</p>
   </div>
-</div>
-
-<hr class="divider" style="margin:0; max-width:900px; margin:0 auto;">
-
-<!-- WHERE TO ENGAGE -->
-<div class="section">
-  <h2 class="section-title">Where to Engage</h2>
-  <p style="margin-bottom:8px;">Right now I'm running multiple bets, each positioned at a different inflection point.</p>
-  <p style="margin-bottom:40px; font-size:16px; color: rgba(40,33,30,0.65);">Previous highlights of me at inflection points: I was LinkedIn's first certified consultant before anyone called it "word of mouth marketing." I co-founded "Ajax Workforce Marketing" because the market hadn't yet landed on "employer branding." I had to educate buyers on B2B2C and employee-generated content in the early teens with Brand Amper. I was the first Executive Producer of RollingStone.com in the late 90s. So when someone asks me what "AEO" or "GEO" stand for, that's not a problem—that's just us getting out ahead of the next curve together.</p>
-
-  <div class="card">
-    <h3>INGENEV Power</h3>
-    <p class="card-subtitle">CCO — Reliable, Flexible, Efficient BTM Power</p>
-    <p>The AI infrastructure buildout has a power problem. INGENEV's modular, behind-the-meter system delivers smooth primary power plus full backup—without diesel and without interconnection delays. I'm here because this is an early market that needs GTM built from scratch, which is exactly what I do.</p>
-    <a href="https://ingenevpower.com" target="_blank" rel="noopener" class="cta-link">Learn more about INGENEV Power →</a>
+  <div style="display: grid; gap: 0; margin-top: 40px">
+    <article class="work-row">
+      <div>
+        <p class="work-kicker">01 &nbsp;/&nbsp; CRO</p>
+        <h3 class="work-title">OnKey</h3>
+        <p class="work-meta">onkey.chat</p>
+      </div>
+      <div>
+        <p class="work-body">An AI-native knowledge system for frontline workers. It closes the loop between the home office and the floor, pushing what people need to know, answering what they ask, and turning those questions into operational insights.</p>
+        <a href="https://onkey.chat" target="_blank" rel="noopener" class="btn btn-secondary" style="justify-content: flex-start">OnKey →</a>
+      </div>
+    </article>
+    <article class="work-row">
+      <div>
+        <p class="work-kicker">02 &nbsp;/&nbsp; CCO</p>
+        <h3 class="work-title">INGENEV</h3>
+        <p class="work-meta">ingenev.com</p>
+      </div>
+      <div>
+        <p class="work-body">Patent-pending modular, DC-native behind-the-meter power. It eliminates the diesel generator and gives a site a real path to renewables—which makes it the answer to the constraint the AI buildout keeps running into.</p>
+        <a href="https://ingenev.com" target="_blank" rel="noopener" class="btn btn-secondary" style="justify-content: flex-start">INGENEV →</a>
+      </div>
+    </article>
+    <article class="work-row">
+      <div>
+        <p class="work-kicker">03 &nbsp;/&nbsp; The playbook</p>
+        <h3 class="work-title">No More Dandelions</h3>
+        <p class="work-meta">Free, documented, repeatable</p>
+      </div>
+      <div>
+        <p class="work-body">My GTM method, written down: how <em>dandelioning</em> spreads, why <em>watermelon metrics</em> read green while the number dies, where the <em>vapor walls</em> are, and the 90-day intervention that clears them. Take it and run it yourself.</p>
+        <a href="/no-more-dandelions" class="btn btn-secondary" style="justify-content: flex-start">Get the playbook →</a>
+      </div>
+    </article>
+    <article class="work-row">
+      <div>
+        <p class="work-kicker">04 &nbsp;/&nbsp; Advisory &amp; investing</p>
+        <h3 class="work-title">A small number of rooms</h3>
+        <p class="work-meta">Founding Principal, Shore GTM · VerdictAEO</p>
+      </div>
+      <div>
+        <p class="work-body">A few board seats &amp;/or fractional engagements a year, focused on mid-market and PE-backed, usually pre-category or post-plateau, and looking at how to leverage AI. I built VerdictAEO for professionals whose referrals now get vetted by an LLM rather than a Google-using human.</p>
+        <a href="#contact" class="btn btn-secondary" style="justify-content: flex-start">Start a conversation →</a>
+      </div>
+    </article>
   </div>
+</section>
 
-  <div class="card">
-    <h3>OnKey</h3>
-    <p class="card-subtitle">CRO — Operational Consistency for Multi-Location Businesses</p>
-    <p>Multi-location business leaders want operational consistency and OnKey delivers it. OnKey is a communication platform that keeps team members, managers, and the home office executing as one—across shifts, locations, and languages.</p>
-    <a href="https://onkey.chat" target="_blank" rel="noopener" class="cta-link">Learn more about OnKey →</a>
+<section id="writing" class="wrap">
+  <div style="background: #ec3013; color: #f3f2f2; padding: clamp(32px, 5vw, 56px)">
+    <p style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 20px">The writing · seiden.substack.com</p>
+    <h2 style="font-size: clamp(38px, 6vw, 76px); line-height: 1; letter-spacing: -0.035em; margin: 0 0 24px">Turns out…</h2>
+    <p style="font-size: clamp(18px, 2vw, 22px); line-height: 1.45; margin: 0 0 32px; max-width: 40ch">Short, honest, occasionally uncomfortable looks back at moments that defined me... usually not for the reason I expected. Read one and see if you see yourself.</p>
+    <form action="https://seiden.substack.com/subscribe" method="get" target="_blank" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; max-width: 520px">
+      <input class="input" type="email" name="email" required placeholder="you@work.com" aria-label="Email address" style="flex: 1 1 220px; background: #f3f2f2; border-color: #f3f2f2; color: #201e1d; font-size: 15px; padding: 12px 14px">
+      <button type="submit" class="btn sub-btn">Subscribe</button>
+    </form>
   </div>
+</section>
 
-  <div class="card">
-    <h3>VerdictAEO</h3>
-    <p class="card-subtitle">Search Optimization for Attorneys &amp; Other Professionals</p>
-    <p>The person looking up a referred attorney no longer just gets a link to a website. Now, thanks to Gemini, ChatGPT, and Perplexity, they get either confirmation or alternative recommendations. I've built the audit process for law firms that want to protect their referrals—and maybe capture a few from the competition.</p>
-    <a href="/verdict-aeo" class="cta-link">Learn more about VerdictAEO →</a>
-  </div>
-
-  <div class="card">
-    <h3>GTM + AI Transformation</h3>
-    <p class="card-subtitle">For Mid-Market, PE-Backed B2B</p>
-    <p>My 90-day diagnostic sprint finds the root cause of a stalled GTM motion, addresses it, and hands back a working system the team can operate without me. The methodology has cut $3M+ in wasteful spend, improved funnel conversion 150%+, and reduced sales cycles by 66% across companies valued from $15M to $1.3B. The playbook is documented and available for free.</p>
-    <div style="margin-top:20px;">
-      <a href="/no-more-dandelions" class="cta-link">Download the playbook →</a><br>
-      <a href="https://calendly.com/jasonseiden" target="_blank" rel="noopener" class="cta-link" style="margin-top:8px; display:inline-block;">Schedule a conversation →</a>
+<section id="about" class="wrap">
+  <h2 class="sect-h2" style="margin-bottom: 40px">Who I am</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 44px; align-items: start">
+    <div>
+      <figure class="grayscale" style="margin: 0 0 20px; border: 2px solid #201e1d">
+        <img src="img/jason.png" alt="Jason Seiden" style="width: 100%; display: block">
+      </figure>
+      <dl style="display: grid; gap: 0; margin: 0; font-size: 14px">
+        <div class="factrow"><dt>Based</dt><dd>Dallas, TX · heart in Chicago</dd></div>
+        <div class="factrow"><dt>School</dt><dd>Kellogg MBA · Wharton BS</dd></div>
+        <div class="factrow"><dt>Built &amp; sold</dt><dd>Brand Amper → The Muse</dd></div>
+      </dl>
+    </div>
+    <div style="max-width: 56ch">
+      <p style="font-size: clamp(19px, 2vw, 23px); line-height: 1.4; margin: 0 0 24px">I see things quickly.</p>
+      <p style="font-size: 17px; line-height: 1.6; margin: 0 0 18px">I'm typically twelve to twenty-four months early. That's cost me as often as it's paid, but it's why I'm useful when there's no best practice to copy, when the market hasn't named the thing yet, or when the old playbook is quietly failing while the dashboard still reads green.</p>
+      <p style="font-size: 17px; line-height: 1.6; margin: 0 0 18px">My approach is simple but runs deep: diagnose fast and honestly, say the true thing out loud, keep the humans intact. The numbers follow.</p>
+      <div style="border-top: 2px solid #201e1d; margin-top: 28px; padding-top: 24px">
+        <p style="font-size: 17px; line-height: 1.6; margin: 0 0 18px">In 2018, my daughter Elle died after a multi-year battle with Complex Regional Pain Syndrome (CRPS). I've written about the epiphany that followed—<a href="https://seiden.substack.com/p/my-story-of-joy-starts-here" target="_blank" rel="noopener">my moment of joy</a>—and how it became the True North that now runs through everything I do, from my work to my frameworks to my speaking.</p>
+      </div>
+      <p style="font-family: var(--font-heading); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; margin: 28px 0 0">with truth + empathy,<br>Jason</p>
     </div>
   </div>
-</div>
+</section>
 
-<hr class="divider" style="margin:0; max-width:900px; margin:0 auto;">
+<figure class="grayscale figband" style="margin-top: 72px">
+  <img src="img/hands.jpeg" alt="Mural of open hands holding growing plants" style="width: 100%; height: clamp(200px, 28vw, 340px); object-fit: cover; object-position: center 45%">
+</figure>
 
-<!-- BIO -->
-<div class="section">
-  <h2 class="section-title">I've Been in the Room</h2>
-  <p>I've been in the room as an owner, as a consultant with a framework, as a manager, and as an employee.</p>
-  <p>Most importantly, I've been in the room as the person responsible for the outcome.</p>
-  <p>I've built and sold a company—Brand Amper, acquired by The Muse. I've run marketing for PE-backed companies at critical inflection points across industries. I've pioneered categories before they had names, and I've learned the hard way that sustainable results require sustainable humans.</p>
-  <p>Kellogg MBA, Wharton undergrad, LinkedIn's first certified consulting partner in North America, plus thirty years of pattern recognition across industries, company sizes, and market cycles… and still going.</p>
-  <p>When things are moving fast and the stakes are high, this is the track record you're actually buying—expertise, experience, relationships, and scar tissue included.</p>
-  <a href="https://www.linkedin.com/in/jasonseiden" target="_blank" rel="noopener" class="cta-link" style="margin-top:20px; display:inline-block;">More at my LinkedIn page →</a>
-</div>
+<section id="contact" class="wrap">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: start">
+    <div>
+      <h2 class="sect-h2" style="margin-bottom: 16px">Tell me something</h2>
+      <p style="font-size: 17px; line-height: 1.6; margin: 0 0 28px; max-width: 40ch">What's stuck? What does your team need to know? I'll do what I can to connect you with someone who can help, even if it's me.</p>
+      <div style="display: flex; flex-direction: column; gap: 0; max-width: 380px">
+        <a href="https://www.linkedin.com/in/jasonseiden" target="_blank" rel="noopener" class="biglink"><span>LinkedIn</span><span>→</span></a>
+        <a href="https://seiden.substack.com" target="_blank" rel="noopener" class="biglink"><span>Turns out… on Substack</span><span>→</span></a>
+      </div>
+    </div>
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" style="display: grid; gap: 16px">
+      <input type="hidden" name="access_key" value="5b20d819-5d2d-498d-8059-323b92da07c3">
+      <input type="hidden" name="subject" value="jasonseiden.com — new message">
+      <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" aria-hidden="true">
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input class="input" id="cf-name" name="name" required style="font-size: 15px; padding: 11px 13px">
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input class="input" id="cf-email" name="email" type="email" required style="font-size: 15px; padding: 11px 13px">
+      </div>
+      <div class="field">
+        <label for="cf-msg">What's stuck?</label>
+        <textarea class="input" id="cf-msg" name="message" rows="5" required style="font-size: 15px; padding: 11px 13px; resize: vertical"></textarea>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+        <button type="submit" class="btn btn-primary" style="padding: 12px 20px; text-transform: uppercase; letter-spacing: 0.06em">Send it</button>
+        <p id="formNote" style="font-size: 13px; color: #605d5d; margin: 0" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
 
-<!-- SUBSTACK CTA -->
-<div class="substack-bar">
-  <h2>Join My Substack. It'll Make Sense Later.</h2>
-  <a href="https://jasonseiden.substack.com" target="_blank" rel="noopener">Subscribe →</a>
-</div>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <p>&copy; <span id="yr"></span> Jason Seiden &nbsp;·&nbsp; <a href="/privacy-policy">Privacy Policy</a></p>
+<footer style="max-width: 1120px; margin: 72px auto 0; padding: 0 28px 56px">
+  <hr class="hr" style="background: #201e1d; margin: 0 0 20px">
+  <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 13px; color: #605d5d">
+    <p style="margin: 0">© <span id="yr"></span> Jason Seiden</p>
+    <p style="margin: 0">More connected, more productive, more joyful.</p>
+  </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jason Seiden",
+  "url": "https://jasonseiden.com/",
+  "image": "https://jasonseiden.com/img/jason.png",
+  "jobTitle": "Chief Revenue Officer, OnKey",
+  "description": "Jason Seiden helps organizations navigate inflection points — the moments when what got you here won't get you where you're going.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Northwestern University, Kellogg School of Management" },
+    { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania, The Wharton School" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/jasonseiden",
+    "https://seiden.substack.com",
+    "https://onkey.chat",
+    "https://ingenev.com"
+  ]
+}
+</script>
+
 <script>
-  // Year
   document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Nav drawer
-  const btn = document.getElementById('menuBtn');
-  const close = document.getElementById('menuClose');
-  const drawer = document.getElementById('navDrawer');
-  const overlay = document.getElementById('navOverlay');
-  function openMenu() { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow='hidden'; }
-  function closeMenu() { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow=''; }
-  btn.addEventListener('click', openMenu);
-  close.addEventListener('click', closeMenu);
-  overlay.addEventListener('click', closeMenu);
-
-  // FAQ accordion (shared)
-  document.querySelectorAll('.faq-question').forEach(q => {
-    q.addEventListener('click', () => {
-      const ans = q.nextElementSibling;
-      const isOpen = q.classList.contains('open');
-      document.querySelectorAll('.faq-question').forEach(x => { x.classList.remove('open'); x.nextElementSibling.classList.remove('open'); });
-      if (!isOpen) { q.classList.add('open'); ans.classList.add('open'); }
-    });
+  var form = document.getElementById('contactForm');
+  var note = document.getElementById('formNote');
+  var btn = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    var name = data.get('name');
+    if (name) { data.set('subject', 'jasonseiden.com — ' + name); }
+    btn.disabled = true; btn.textContent = 'Sending…'; note.textContent = '';
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
+      .then(function (r) {
+        if (!r.ok) { throw new Error(r.status); }
+        form.reset(); btn.textContent = 'Sent';
+        note.textContent = "Got it — I'll come back to you.";
+      })
+      .catch(function () {
+        btn.disabled = false; btn.textContent = 'Send it';
+        note.textContent = "That didn't go through. Try LinkedIn?";
+      });
   });
 </script>
 </body>
